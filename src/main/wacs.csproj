@@ -95,9 +95,6 @@
     <ApplicationIcon>icon.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="ACMESharp, Version=2.0.1.105, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\ACMESharpCore.2.0.1.105\lib\netstandard2.0\ACMESharp.dll</HintPath>
-    </Reference>
     <Reference Include="Autofac, Version=4.9.3.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
       <HintPath>..\packages\Autofac.4.9.3\lib\net45\Autofac.dll</HintPath>
     </Reference>
@@ -608,6 +605,10 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\ACMESharpCore\src\ACMESharp\ACMESharp.csproj">
+      <Project>{7018aa14-e7dc-4765-a909-4c01e8613721}</Project>
+      <Name>ACMESharp</Name>
+    </ProjectReference>
     <ProjectReference Include="..\fluent-command-line-parser\FluentCommandLineParser\FluentCommandLineParser.csproj">
       <Project>{74cdfa61-81d8-40f2-b536-949baba15d3e}</Project>
       <Name>FluentCommandLineParser</Name>
